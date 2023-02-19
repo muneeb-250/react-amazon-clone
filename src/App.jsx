@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <BrowserRouter>
       <Route exact path='/'>
         <Header />
+        <Home />
       </Route>
       <Route path='/login'>
         <h1>Login</h1>
