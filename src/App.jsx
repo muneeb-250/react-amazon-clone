@@ -7,10 +7,10 @@ function App() {
   return (
     <BrowserRouter>
       <Route exact path='/'>
-        <h1>Welcome</h1>
+        <Header />
       </Route>
       <Route path='/login'>
-        <Header />
+        <h1>Login</h1>
       </Route>
       <Route path='/checkout'>
         <h1>Checkout</h1>

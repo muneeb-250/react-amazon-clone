@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
-import SearchIcon from '@mui/icons-material/Search'
+import { ShoppingBasketOutlined, Search } from '@mui/icons-material'
 const Header = () => {
     return (
         <nav className="header">
@@ -10,7 +10,7 @@ const Header = () => {
             </Link>
             <div className="header__search">
                 <input type="text" className="header__searchInput" />
-                <SearchIcon className="header__searchIcon"></SearchIcon>
+                <Search className="header__searchIcon"></Search>
             </div>
 
             <div className="header__nav">
@@ -30,6 +30,12 @@ const Header = () => {
                     <div className="header__option">
                         <span className="header__optionLineOne">Your</span>
                         <span className="header__optionLineTwo">Prime</span>
+                    </div>
+                </Link>
+                <Link to="/checkout" className='header__link'>
+                    <div className="header__optionBasket">
+                        <ShoppingBasketOutlined />
+                        <span className="header__optionLineTwo header_basketCount">0</span>
                     </div>
                 </Link>
 
