@@ -10,6 +10,7 @@ function App() {
       <Route exact path='/'>
         <Header />
         <Home />
+
       </Route>
       <Route path='/login'>
         <h1>Login</h1>
