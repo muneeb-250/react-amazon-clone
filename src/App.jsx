@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-
+import Checkout from './Components/Checkout/Checkout';
 function App() {
 
   return (
@@ -16,7 +16,8 @@ function App() {
         <h1>Login</h1>
       </Route>
       <Route path='/checkout'>
-        <h1>Checkout</h1>
+        <Header />
+        <Checkout />
       </Route>
     </BrowserRouter>
   )
