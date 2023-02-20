@@ -1,3 +1,12 @@
+.checkout {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: max-content;
+    /* width: 100%; */
+}
+
 .checkout__ad {
     margin: 0 auto;
     width: 100%;
